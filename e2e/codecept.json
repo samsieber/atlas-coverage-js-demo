@@ -3,10 +3,13 @@
   "helpers": {
     "Puppeteer": {
       "url": "http://localhost:9080",
-      "manualStart": false,
+      "manualStart": true,
       "restart": false,
       "keepBrowserState": true,
       "show": true
+    },
+    "PuppeteerCoverage": {
+      "require": "./puppeteer-coverage-helper.js"
     }
   },
   "mocha": {},
