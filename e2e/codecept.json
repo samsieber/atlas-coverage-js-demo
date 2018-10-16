@@ -1,0 +1,25 @@
+{
+  "output": "./output",
+  "helpers": {
+    "Puppeteer": {
+      "url": "http://localhost:9080",
+      "manualStart": false,
+      "restart": false,
+      "keepBrowserState": true,
+      "show": true
+    }
+  },
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {},
+  "plugins": {
+    "screenshotOnFail": {
+      "enabled": true
+    }
+  },
+  "tests": "./src/**/*.e2e-spec.js",
+  "timeout": 10000,
+  "name": "ng-demo"
+}
