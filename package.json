@@ -9,12 +9,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-
+    "run-atlas": "node coverage/generate-settings.js",
     "build-prod-sm": "ng build --prod --source-map",
-
+    "process-e2e-coverage": "node e2e/process-coverage.js",
     "e2e": "yarn build-prod-sm && yarn e2e-no-build",
     "e2e-no-build": "yarn serve-built && ((cd e2e && codeceptjs run); yarn kill-serve-built)",
-
     "serve-built": "cd dist/ng-demo && static-server &",
     "kill-serve-built": "pkill -f static-server"
   },
@@ -29,6 +28,7 @@
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
+    "atlas-coverage": "^0.1.2",
     "codeceptjs": "^1.2.1",
     "core-js": "^2.5.4",
     "puppeteer": "^1.1.1",
