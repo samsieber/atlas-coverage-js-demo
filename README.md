@@ -1,27 +1,8 @@
-# NgDemo
+# Example atlas-coverage Program
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+This project is base on the [ng-demo project](https://github.com/mraible/ng-demo) and was modified in the following ways: (each step is linked to the corresponding commit) 
+1) [Execute the e2e tests via puppetter against the minified distribution](https://github.com/samsieber/atlas-coverage-js-demo/commit/f6730cae887d5b66289bdfb3039aa5c7390e15f1) (instead of using jest) 
+2) [Record the coverage data on the minified files](https://github.com/samsieber/atlas-coverage-js-demo/commit/79a3fd375c0d626e058128a2e134027930461d21)
+3) [Use the atlas-coverage tool to map the coverage data from the minified files to the source files, outputting in the e2e/output/coverage.xml file](https://github.com/samsieber/atlas-coverage-js-demo/commit/49421637f3958e72780a151ccfa71a13e793415b)
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+See the [js runner project](https://github.com/samsieber/atlas-coverage-js) and the [actual program implementation project](https://github.com/samsieber/atlas-coverage) for more details
